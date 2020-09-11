@@ -251,6 +251,10 @@ address {
   margin: 11px 12px;
 }
 
+.modal-form-input:focus ~ .modal-form-pick {
+  fill: var(--accent-color);
+}
+
 .modal-form-items-title {
   margin-bottom: 4px;
   font-size: 12px;
@@ -281,10 +285,6 @@ address {
   background-image: url(../images/svg/icon-check.svg);
   background-size: contain;
   background-origin: border-box;
-}
-
-.modal-form-check:checked ~ .modal-form-label-check {
-  transform: translateX(15px);
 }
 
 .confirmation {
@@ -767,9 +767,14 @@ address {
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   background-color: var(--third-bg-color);
+  color: var(--white-text-color);
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
+}
+
+.subscription-input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .subscription-button {
