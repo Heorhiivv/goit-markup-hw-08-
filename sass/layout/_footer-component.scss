@@ -1,0 +1,19 @@
+
+/* ********FOOTER ***********/
+.footer {
+  margin: 0 auto;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background-color: var(--third-bg-color);
+}
+.footer-content {
+  display: flex;
+  align-items: baseline;
+}
+.logo-footer {
+  color: var(--white-text-color);
+}
+.footer .logo {
+  margin-bottom: 20px;
+}

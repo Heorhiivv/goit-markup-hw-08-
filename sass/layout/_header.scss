@@ -1,0 +1,12 @@
+/********** HEADER ***********/
+.page-header {
+  border-bottom: 1px solid #ECECEC;
+}
+.header-parts,
+.page-header-nav {
+  display: flex;
+  align-items: center;
+}
+.logo-header {
+  color: var(--primary-text-color);
+}

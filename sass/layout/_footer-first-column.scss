@@ -1,0 +1,23 @@
+.first-footer-column {
+  margin-right: 70px;
+ }
+.footer-address p,
+.footer-address .contacts {
+  margin: 0px;
+
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+
+  color: var(--white-text-color);
+}
+
+.footer-address .contacts {
+  color: rgba(255, 255, 255, 0.6);
+    &:hover,
+    &:focus {color: var(--accent-color);
+    }
+  }
+.footer-address-item:not(:last-child) {
+  margin-bottom: 9px;
+}

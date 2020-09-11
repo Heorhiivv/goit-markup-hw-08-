@@ -1,0 +1,32 @@
+/* *****SOCIAL -NETWORK - LIST**** */
+.social-network,
+.social-link {
+  display: flex;
+  justify-content: center;
+}
+.social-network-item:not(:last-child) {
+  margin-right: 10px;
+}
+.social-link {
+  align-items: center;
+
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
+    &:focus,
+    &:hover {
+     background-color: var(--accent-color);
+      
+     & .network-icon {
+      fill: var(--white-text-color);
+}
+}
+}
+.network-icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--media-color);
+}
+/* *****SOCIAL -NETWORK - LIST - END**** */
