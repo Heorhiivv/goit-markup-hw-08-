@@ -1,0 +1,42 @@
+.menu-btn {
+  display: inline-flex;
+  border: none;
+  background-color: transparent;
+  width: 40px;
+  height: 40px;
+
+    & .close-btn {
+      display: none;
+    }
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+}
+.menu-btn.is-open .open-btn {
+  display: none;
+}
+.menu-btn.is-open .close-btn {
+  display: block;
+}
+.burger-menu {
+
+    @media screen and (max-width: 767px) {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+
+      padding-top: 60px;
+      padding-bottom: 60px;
+
+        &.is-open {
+        display: block;
+      }
+    }
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-grow: 1;
+      align-items: center;
+    }
+}
