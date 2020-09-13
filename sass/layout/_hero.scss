@@ -1,12 +1,9 @@
 /********** HERO ***********/
 .hero {
-  display: flex;
-
-  max-width: 1600px;
-  min-height: 600px;
-  
   margin-left: auto;
   margin-right: auto;
+
+  min-height: 400px;
 
   background-image: linear-gradient(
     to right,
@@ -17,6 +14,12 @@
   background-color: var(--third-bg-color);
   background-repeat: no-repeat;
   background-position: center;
+
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      max-width: 1600px;
+      min-height: 600px;
+  }
 }
 .hero-items {
   max-width: 726px;
@@ -29,13 +32,19 @@
   margin-bottom: 30px;
 
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.364;
+  font-size: 26px;
+  line-height: 1.615;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
   color: var(--white-text-color);
+
+    @media screen and (min-width: 1200px) {
+      font-size: 44px;
+      line-height: 1.364;
+    }
 }
+
 .button-primary {
   display: inline-flex;
   border: 1px solid transparent;

@@ -1,18 +1,5 @@
-/********* ADVANTAGES **********/
-.advantages-title {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.143;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-
-  margin-top: 0px;
-  margin-bottom: 10px;
-
-  color: var(--primary-text-color);
-}
 .advantages-list {
-  display: flex;
+  display: block;
 
     & p {
       font-size: 14px;
@@ -24,12 +11,14 @@
     
       color: var(--secondary-text-color);
     }
+    
+    @media screen and (min-width: 768px) { 
+      display: flex; 
+      flex-wrap: wrap;
+  }
 }
 
-.advantages-item {
-  width: calc((100% - 90px) / 4);
-
-  &::before {
+.advantages-item::before {
     display: block;
     content: "";
     width: 100%;
@@ -41,9 +30,49 @@
     background-position: center;
   
     background-color: var(--secondary-bg-color);
+}
+  
+.advantages-item {
+  &:not(:last-child) {
+    @media screen and (max-width: 1199px) {
+      margin-bottom: 30px;
   }
 }
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 30px) / 2);
+     &:nth-child(2n + 1) {
+       margin-right: 30px;
+  }
+}
+  @media screen and (min-width: 768px) {
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 0;
+    }
+  }
+    @media screen and (min-width: 1200px) {
+      width: calc((100% - 90px) / 4);
+        &:not(:last-child) {
+           margin-right: 30px;
+  }
+ }
+}
+.advantages-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: center;
 
+  margin-top: 0px;
+  margin-bottom: 10px;
+
+  color: var(--primary-text-color);
+
+    @media screen and (min-width: 768px) {
+      text-align: left;
+  }
+}
 .advantages-item:nth-child(1)::before {
   background-image: url(../images/advantages/antenna.svg);
 }
@@ -56,7 +85,3 @@
 .advantages-item:nth-child(4)::before {
   background-image: url(../images/advantages/astronaut.svg);
 }
-.advantages-item:not(:last-child) {
-  margin-right: 30px;
-}
-/******* ADVANTAGES END *******/
