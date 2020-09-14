@@ -17,8 +17,8 @@
 }
 
 .site-nav {
-  display: flex;
-  margin: 0px;
+ 
+  margin: 0 auto;
 
   font-weight: 500;
   font-size: 14px;
@@ -29,8 +29,7 @@
     display: block;
     position: relative;
     
-    padding-top: 32px;
-    padding-bottom: 32px;
+    
     width: max-content;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     color: var(--primary-text-color);
@@ -44,9 +43,13 @@
   @media screen and (max-width: 767px) {
     font-size: 18px;
     line-height: 1.167;
+    margin-bottom: 60px;
   }
   @media screen and (min-width: 768px) {
+    display: flex;
     margin-left: 88px;
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
   @media screen and (min-width: 1200px) {
     margin-left: 93px;
@@ -63,30 +66,36 @@
   position: absolute;
   content:"";
   opacity: 0;
-
-  margin: 0 auto;
-  margin-top: 29px;
+  margin-top: 8px;
   
   width: 100%;
   height: 4px;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background: #2196F3;
   border-radius: 2px;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 29px;
+  }
 }
 .site-nav-item:not(:last-child) {
   @media screen and (max-width: 767px) {
     margin-bottom: 40px;
-    margin-right: 0;
   }
   @media screen and (min-width: 767px) {
     margin-bottom: 0;
     margin-right: 50px;
   }
 }
+.site-nav-item .link {
+  margin: 0 auto;
+}
 .contacts {
-  align-items: center;
-  display: flex;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @media screen and (min-width: 1200px) {
+    align-items: center;
+  display: flex;
+  }
 }
 .header-address {
   margin-left: auto;
@@ -97,7 +106,7 @@
   }
 }
 .header-address-item:not(:last-child) {
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 767px) {
     margin-bottom: 16px;
   }
   @media screen and (min-width: 768px) {
@@ -118,9 +127,11 @@
     &:focus {
       color: var(--accent-color);
   }
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 768px) {
     font-size: 18px;
     line-height: 1.167;
+    justify-content: center;
+    display: flex;
   }
   @media screen and (min-width: 768px) {
     font-size: 12px;

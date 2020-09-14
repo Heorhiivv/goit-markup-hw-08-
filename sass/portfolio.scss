@@ -1,16 +1,17 @@
-// @import "./utils/visually-hidden";
-// @import "./utils/veriables";
-// @import "./base/base";
-// @import "./base/container";
-// @import "./components/section";
-// @import "./components/title";
-// @import "./components/logo";
-// @import "./components/social-networks";
-// // ****HEADER****//
-// @import "./layout/header";
-// // ****BTN****//
-// @import "./layout/portfolio-btn";
-// // ****PROJECTS****//
-// @import "./layout/portfolio-projects";
-// // ****FOOTER****//
-// @import "./layout/footer-component";
+@import "./utils/visually-hidden";
+@import "./utils/veriables";
+@import "./base/base";
+@import "./base/container";
+@import "./components/section";
+@import "./components/title";
+@import "./components/logo";
+@import "./components/social-networks";
+// ****HEADER****//
+@import "./components/burger-menu";
+@import "./layout/header";
+// ****BTN****//
+@import "./layout/portfolio-btn";
+// ****PROJECTS****//
+@import "./layout/portfolio-projects";
+// ****FOOTER****//
+@import "./layout/footer-component";
