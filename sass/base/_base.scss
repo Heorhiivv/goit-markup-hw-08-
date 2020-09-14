@@ -5,7 +5,7 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
-  outline: 2px solid tomato;
+  outline: 1px solid black;
 }
 body {
   margin: 0 auto;
@@ -23,6 +23,8 @@ body {
 }
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 address {
   font-style: normal;
