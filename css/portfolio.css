@@ -37,6 +37,10 @@ body {
   color: var(--primary-text-color);
 }
 
+body.moddal-open {
+  overflow: hidden;
+}
+
 .link {
   text-decoration: none;
 }

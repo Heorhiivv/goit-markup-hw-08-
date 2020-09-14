@@ -10,8 +10,11 @@ html {
 body {
   margin: 0 auto;
   font-family: Roboto, sans-serif;
-  // overflow: hidden;
   color: var(--primary-text-color);
+  
+}
+body.moddal-open {
+  overflow: hidden;
 }
 .link {
   text-decoration: none;
