@@ -174,11 +174,11 @@ address {
   cursor: pointer;
 }
 
-.menu-btn:focus {
+.menu-btn:focus, .menu-btn:hover {
   fill: var(--accent-color);
 }
 
-.menu-btn .close-btn {
+.menu-btn .open-btn {
   display: none;
 }
 
@@ -188,13 +188,20 @@ address {
   }
 }
 
+.open-btn {
+  fill: black;
+}
+
+.open-btn:focus {
+  fill: var(--accent-color);
+}
+
 .menu-btn.is-open .open-btn {
-  display: none;
+  display: block;
 }
 
 .menu-btn.is-open .close-btn {
-  display: block;
-  fill: var(--primary-text-color);
+  display: none;
 }
 
 @media screen and (max-width: 767px) {

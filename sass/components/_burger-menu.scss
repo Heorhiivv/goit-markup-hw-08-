@@ -6,22 +6,28 @@
   height: 40px;
   cursor: pointer;
 
-    &:focus {
-    fill: var(--accent-color);
+    &:focus,
+    &:hover {
+   fill: var(--accent-color);
   }
-    & .close-btn {
+    & .open-btn {
       display: none;
     }
     @media screen and (min-width: 768px) {
       display: none;
     }
 }
+.open-btn {
+  fill: black;
+  &:focus {
+   fill: var(--accent-color);
+  }
+}
 .menu-btn.is-open .open-btn {
-  display: none;
+  display: block;
 }
 .menu-btn.is-open .close-btn {
-  display: block;
-  fill: var(--primary-text-color);
+  display: none;
 }
 .burger-menu {
 
